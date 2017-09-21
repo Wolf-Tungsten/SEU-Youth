@@ -1,0 +1,139 @@
+body{
+    font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*背景红色幕布*/
+#red-ground{
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 500px;
+    background-color: #E51C23;
+    z-index: -1;
+}
+
+#youth-head{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+#youth-page-icon{
+    width:300px;
+  
+}
+
+#youth-page-title{
+    width: 600px;
+
+}
+
+.youth-guide{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 17px;
+}
+
+#youth-guide-bar{
+    width: 900px;
+    border: 3px solid #F5F5F5;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
+
+.youth-guide-index{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#FFFFFF;
+    font-size:18px;
+    font-weight:bolder;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+    width: 900px;
+}
+
+.youth-figure{
+
+    border-radius: 6px;
+    background: #BDBDBD;
+    width: 600px;
+    height: 330px;
+    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.50);
+    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.50);
+    overflow: hidden;
+}
+
+.youth-group-figure-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: 330px;
+    padding-top:17px;
+      
+}
+
+.youth-panel{
+    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.50);
+    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.50);
+    overflow: hidden;
+    border-radius: 6px;
+    
+}
+
+.youth-latest-info{
+    width:284px;
+    height: 330px;
+    margin-left: 17px;
+    background: #FFFFFF;
+}
+
+.youth-latest-info-head{
+    width:284px;
+    height: 60px;
+    background: #E51C23;
+    
+}
+
+.youth-latest-info-title{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    color: #FFFFFF;
+    padding-left: 18px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.youth-latest-info-item{
+    width:284px;
+    height: 53px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0,0,0,0.26);
+    padding-left: 17px;
+}
+
+.youth-latest-info-item-title{
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: -5px;
+    height:17px;
+}
+
+.youth-latest-info-item-date{
+    font-size: 9px;
+    margin-top: 0px;
+    color: rgba(0,0,0,0.54);
+    font-weight: lighter;
+    line-height: 8px;
+    
+}
