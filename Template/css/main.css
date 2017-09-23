@@ -4,11 +4,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
+    margin: 0px;
 }
 
 /*背景红色幕布*/
 #red-ground{
-    position: fixed;
+    position: absolute;
     left:0;
     top:0;
     width: 100%;
@@ -137,3 +139,111 @@ body{
     line-height: 8px;
     
 }
+
+.youth-content-panel{
+    width:300px;
+    height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.youth-content-group{
+    display:flex;
+    justify-content: center;
+    align-items:stretch;
+    width: 900px;
+    height: 300px;
+    padding-top: 40px;
+}
+
+.youth-content-head-title{
+    font-weight:bold;
+    font-size: 24px;
+    color: rgba(0,0,0,0.86);
+}
+
+.youth-content-head-button{
+    font-size: 11px;
+    color: rgba(0,0,0,0.54);
+    line-height: 20px;
+}
+
+.youth-content-head-bar{
+
+    border: 4px solid #E51C23;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
+
+.youth-content-divide{
+    width: 280px;
+    /* Line 4: */
+    border-bottom: 1px dashed rgba(0,0,0,0.38);
+}
+
+.youth-content-title{
+    margin-top:5px;
+    margin-bottom: 2px;
+    width:280px;
+    overflow-x: hidden;
+}
+
+.youth-content-date{
+    margin-top: 0px;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: rgba(0,0,0,0.54);
+    font-weight: lighter;
+}
+
+.youth-link-panel{
+    width: 100%;
+    height:50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.12);
+}
+
+.youth-link-index{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.youth-link{
+    font-size: 14px;
+    color: rgba(0,0,0,0.54);
+}
+
+.youth-link-bg{
+    position: absolute;
+    left: 0;
+    top:930px;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.12);
+    z-index: -1;
+    
+}
+
+
+.youth-copyright-text{
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    margin-top: 7px;
+}
+
+
+
+.youth-copyright-panel{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E51C23;
+    width:100%;
+}
+
