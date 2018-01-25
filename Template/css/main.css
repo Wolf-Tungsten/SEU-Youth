@@ -1,5 +1,5 @@
 body{
-    font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    font-family: "Microsoft Yahei";
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -8,242 +8,76 @@ body{
     margin: 0px;
 }
 
-/*背景红色幕布*/
-#red-ground{
-    position: absolute;
-    left:0;
-    top:0;
+/*头图相关*/
+.youth-banner-background{
+    width:100%;
+    background-color: #FF2F00;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/*导航栏相关*/
+.youth-nav-background{
     width: 100%;
-    height: 500px;
-    background-color: #E51C23;
-    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E85000;
 }
 
-#youth-head{
+.youth-nav{
+    width: 1000px;
     display:flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 30px;
-}
-
-#youth-page-icon{
-    width:300px;
-  
-}
-
-#youth-page-title{
-    width: 600px;
+    justify-content:center;
 
 }
 
-.youth-guide{
-   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 17px;
-}
-
-#youth-guide-bar{
-    width: 900px;
-    border: 3px solid #F5F5F5;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
-}
-
-.youth-guide-index{
+.wp_nav .nav-item{
+    background-color: #E85000;
+    height: 40px;
+    width: 111px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+
+.wp_nav .nav-item :hover {
+    background-color: #FCBE00;
+ color:#614900;
+}
+
+.wp_nav .item-name{
     color:#FFFFFF;
-    font-size:18px;
-    font-weight:bolder;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.50);
-    width: 900px;
-}
-
-.youth-figure{
-
-    border-radius: 6px;
-    background: #BDBDBD;
-    width: 600px;
-    height: 330px;
-    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.50);
-    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.50);
-    overflow: hidden;
-}
-
-.youth-group-figure-info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 900px;
-    height: 330px;
-    padding-top:17px;
-      
-}
-
-.youth-panel{
-    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.50);
-    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.50);
-    overflow: hidden;
-    border-radius: 6px;
-    
-}
-
-.youth-latest-info{
-    width:284px;
-    height: 330px;
-    margin-left: 17px;
-    background: #FFFFFF;
-}
-
-.youth-latest-info-head{
-    width:284px;
-    height: 60px;
-    background: #E51C23;
-    
-}
-
-.youth-latest-info-title{
-    height: 55px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    color: #FFFFFF;
-    padding-left: 18px;
-    font-weight: bold;
     font-size: 18px;
 }
 
-.youth-latest-info-item{
-    width:284px;
-    height: 53px;
-    overflow: hidden;
-    border-bottom: 1px solid rgba(0,0,0,0.26);
-    padding-left: 17px;
-}
-
-.youth-latest-info-item-title{
-    font-size: 16px;
-    margin-top: 8px;
-    margin-bottom: -5px;
-    height:17px;
-}
-
-.youth-latest-info-item-date{
-    font-size: 9px;
-    margin-top: 0px;
-    color: rgba(0,0,0,0.54);
-    font-weight: lighter;
-    line-height: 8px;
-    
-}
-
-.youth-content-panel{
-    width:300px;
-    height: 300px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.youth-content-group{
-    display:flex;
-    justify-content: center;
-    align-items:stretch;
-    width: 900px;
-    height: 300px;
-    padding-top: 40px;
-}
-
-.youth-content-head-title{
-    font-weight:bold;
-    font-size: 24px;
-    color: rgba(0,0,0,0.86);
-}
-
-.youth-content-head-button{
-    font-size: 11px;
-    color: rgba(0,0,0,0.54);
-    line-height: 20px;
-}
-
-.youth-content-head-bar{
-
-    border: 4px solid #E51C23;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
-}
-
-.youth-content-divide{
-    width: 280px;
-    /* Line 4: */
-    border-bottom: 1px dashed rgba(0,0,0,0.38);
-}
-
-.youth-content-title{
-    margin-top:5px;
-    margin-bottom: 2px;
-    width:280px;
-    overflow-x: hidden;
-}
-
-.youth-content-date{
-    margin-top: 0px;
-    font-size: 12px;
-    margin-bottom: 5px;
-    color: rgba(0,0,0,0.54);
-    font-weight: lighter;
-}
-
-.youth-link-panel{
-    width: 100%;
-    height:50px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0,0,0,0.12);
-}
-
-.youth-link-index{
-    width: 75%;
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-.youth-link{
-    font-size: 14px;
-    color: rgba(0,0,0,0.54);
-}
-
-.youth-link-bg{
-    position: absolute;
-    left: 0;
-    top:930px;
-    height: 50px;
-    width: 100%;
-    background-color: rgba(0,0,0,0.12);
-    z-index: -1;
-    
-}
-
-
-.youth-copyright-text{
-    font-size: 14px;
+.wp_nav .sub-nav .item-name{
     color: #FFFFFF;
-    margin-bottom: 0px;
-    margin-top: 7px;
+    font-size: 13px;
 }
+.youth-nav .wp_nav { display:block; margin: 0; padding: 0;display: block; *zoom:1; height:40px;}
+.youth-nav .wp_nav * {margin: 0; padding: 0}
+.youth-nav .wp_nav:after {clear: both;content: ".";display: block;height: 0;visibility: hidden;}
+.youth-nav .wp_nav .nav-item { display:inline-block; float:left; position:relative; vertical-align:bottom;}
+.youth-nav .wp_nav .on { z-index:10; color:#000000;background-color:#FCBE00;}
+.youth-nav .wp_nav .nav-item .mark {display:none; width:100%; height:100%; position:absolute; left:0;top:0; z-index:99; }
+.youth-nav .wp_nav .nav-item a{ font-family:"Microsoft Yahei"; display:block;text-align:center;position:relative; z-index:100;height:40px;}
+.youth-nav .wp_nav .nav-item a.parent:hover{}
+.youth-nav .wp_nav .nav-item a.parent {color:#000;}
+.youth-nav .wp_nav .nav-item a span.item-name { display:inline-block; padding:0px 10px; line-height:40px;cursor:pointer;width:90px;font-size:18px;padding-top:0px;padding-bottom:0px;}
+.youth-nav .wp_nav .on .nav-item a span.item-name:hover {color:#614900;}
+.youth-nav .wp_nav .sub-nav {display:block; width:100%; position:absolute; z-index:200; visibility:hidden; border:0px solid #ccc;border-top:none;background-color:rgba(0,0,0,0);top:40px !important;}
+.youth-nav .wp_nav .sub-nav .nav-item { white-space:nowrap; width:111px !important;height:40px !important; background-color:rgba(0,0,0,0); border-width:0;}
+.youth-nav .wp_nav .sub-nav .nav-item .mark { background:#fff;}
+.youth-nav .wp_nav .sub-nav .nav-item a {font-family:"Microsoft Yahei"; font-size:13px;font-weight:normal; color:#000;text-align:left;border-top:0px solid #D8E1CC;min-width: 80px;background-color:rgba(232,80,0,0.76);}
+.youth-nav .wp_nav .sub-nav .nav-item a.parent:hover{ background:#eee;color:#000;}
+.youth-nav .wp_nav .sub-nav .nav-item a.parent { background:#eee;color:#000;}
+.youth-nav .wp_nav .sub-nav .nav-item a span.item-name { padding:0px 11px; line-height:40px;font-size:14px;}
+.youth-nav .wp_nav .sub-nav .nav-item a span.item-name:hover { padding:0px 10px; padding-left:5px;border-style:solid; border-color:#614900; border-width:0 0 0 5px; line-height:40px;font-size:14px; color:#614900;}
+.youth-nav .wp_nav .nav-item a.parent:hover span.item-name{}
+.youth-nav .wp_nav .nav-item a.parent span.item-name{}
+.youth-nav .wp_nav .sub-nav .nav-item a.parent:hover span.item-name{}
+.youth-nav .wp_nav .sub-nav .nav-item a.parent span.item-name{}
 
-
-
-.youth-copyright-panel{
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #E51C23;
-    width:100%;
-}
-
+/*！包含媒体查询的内容*/
