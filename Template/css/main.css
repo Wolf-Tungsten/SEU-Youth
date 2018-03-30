@@ -1,11 +1,12 @@
 body{
-    font-family: "Microsoft Yahei";
+    font-family: Avenir Next,Noble Scarlet,PingFang SC,Microsoft YaHei UI,sans-serif;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
     margin: 0px;
+    font-size: 14px;
 }
 
 /*头图相关*/
@@ -23,7 +24,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #E85000;
+    background-color: #C8161D;
 }
 
 .youth-nav{
@@ -34,7 +35,7 @@ body{
 }
 
 .wp_nav .nav-item{
-    background-color: #E85000;
+    background-color: #C8161D;
     height: 40px;
     width: 111px;
     display: flex;
@@ -44,7 +45,7 @@ body{
 
 .wp_nav .nav-item :hover {
     background-color: #FCBE00;
- color:#614900;
+    color:#614900;
 }
 
 .wp_nav .item-name{
@@ -62,7 +63,7 @@ body{
 .youth-nav .wp_nav .nav-item { display:inline-block; float:left; position:relative; vertical-align:bottom;}
 .youth-nav .wp_nav .on { z-index:10; color:#000000;background-color:#FCBE00;}
 .youth-nav .wp_nav .nav-item .mark {display:none; width:100%; height:100%; position:absolute; left:0;top:0; z-index:99; }
-.youth-nav .wp_nav .nav-item a{ font-family:"Microsoft Yahei"; display:block;text-align:center;position:relative; z-index:100;height:40px;}
+.youth-nav .wp_nav .nav-item a{ font-family:Avenir Next,Noble Scarlet,PingFang SC,Microsoft YaHei UI,sans-serif; display:block;text-align:center;position:relative; z-index:100;height:40px;}
 .youth-nav .wp_nav .nav-item a.parent:hover{}
 .youth-nav .wp_nav .nav-item a.parent {color:#000;}
 .youth-nav .wp_nav .nav-item a span.item-name { display:inline-block; padding:0px 10px; line-height:40px;cursor:pointer;width:90px;font-size:18px;padding-top:0px;padding-bottom:0px;}
@@ -70,7 +71,7 @@ body{
 .youth-nav .wp_nav .sub-nav {display:block; width:100%; position:absolute; z-index:200; visibility:hidden; border:0px solid #ccc;border-top:none;background-color:rgba(0,0,0,0);top:40px !important;}
 .youth-nav .wp_nav .sub-nav .nav-item { white-space:nowrap; width:111px !important;height:40px !important; background-color:rgba(0,0,0,0); border-width:0;}
 .youth-nav .wp_nav .sub-nav .nav-item .mark { background:#fff;}
-.youth-nav .wp_nav .sub-nav .nav-item a {font-family:"Microsoft Yahei"; font-size:13px;font-weight:normal; color:#000;text-align:left;border-top:0px solid #D8E1CC;min-width: 80px;background-color:rgba(232,80,0,0.76);}
+.youth-nav .wp_nav .sub-nav .nav-item a {font-family:Avenir Next,Noble Scarlet,PingFang SC,Microsoft YaHei UI,sans-serif; font-size:13px;font-weight:normal; color:#000;text-align:left;border-top:0px solid #D8E1CC;min-width: 80px;background-color:rgba(232,80,0,0.76);}
 .youth-nav .wp_nav .sub-nav .nav-item a.parent:hover{ background:#eee;color:#000;}
 .youth-nav .wp_nav .sub-nav .nav-item a.parent { background:#eee;color:#000;}
 .youth-nav .wp_nav .sub-nav .nav-item a span.item-name { padding:0px 11px; line-height:40px;font-size:14px;}
@@ -80,4 +81,142 @@ body{
 .youth-nav .wp_nav .sub-nav .nav-item a.parent:hover span.item-name{}
 .youth-nav .wp_nav .sub-nav .nav-item a.parent span.item-name{}
 
-/*！包含媒体查询的内容*/
+/*！导航栏相关*/
+
+.youth-slide-panel{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fbfbfb;
+}
+/* 轮播图相关*/
+.youth-slide-background{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.youth-slide {
+    width: 1000px;
+    height: 400px;
+}
+/*！ 轮播图相关*/
+
+.youth-slide-list{
+    margin: 20px;
+}
+
+.youth-slide-sub{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+    padding-bottom: 10px;
+}
+
+.youth-window-title-text span{
+    font-size: 18px;
+}
+
+.youth-window-title{
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #E72520;
+    display: flex;
+    align-items: baseline;
+    height: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+
+.youth-window-more-btn span{
+    color: #E72520;
+    text-decoration: none;
+}
+
+.youth-window-more-btn a{
+    color: #E72520;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.youth-window-content{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.notification-title a{
+    text-decoration: none;
+    color:#E72520;
+    font-size: 14px;
+}
+
+.article-title a{
+    text-decoration: none;
+    color:#333333;
+    font-size: 14px;
+    flex-grow: 1;
+    
+}
+
+.article-date{
+    text-decoration: none;
+    color:#4f4f4f;
+    font-size: 14px;
+    flex-shrink: 0;
+    margin-left: 6px;
+}
+
+.youth-window-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.youth-window-sub-group{
+     display: flex;
+     justify-content: center; 
+        padding: 0px 40px 0px 40px;
+
+}
+
+.youth-link-index{
+    width: 80%;
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.youth-link-panel{
+    width: 100%;
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+}
+
+.youth-link-panel a {
+    text-decoration: none;
+    font-size: 14px;
+    color:#4F4F4F;
+}
+
+.youth-copyright-panel{
+    background-color: #E72520;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7px;
+}
+
+.youth-copyright-text{
+    color: #F4F4F4;
+    margin: 7px;
+}
