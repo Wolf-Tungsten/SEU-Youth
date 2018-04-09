@@ -1,95 +1,87 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>共青团东南大学委员会</title>
-<link href="main.css" type="text/css" rel="stylesheet" />
-<script type="text/javascript" src="main.js" ></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>东南大学校团委</title>
+    <link type="text/css" href="css/main.css" rel="stylesheet"/>
 </head>
 <body>
-<div id="login" class="width">
-<table cellpadding="0" cellspacing="0" border="0" width="100%" height="28">
-<tr>
-<td width="5px">&nbsp;</td>
-<td width="60">站点统计：</td>
-<td width="80">
-<div frag="面板1"> 
-<div frag="窗口1"> 
-<div frag="窗口内容"> 
-<!--[WP1TO3]--> 
-<table cellpadding="0" cellspacing="0" border="0" width="100%" height="28"><tr><td>(频道)</td></tr></table> 
-</div> 
-</div> 
-</div> 
-</td>
-<td>&nbsp;</td>
-<td width="300">
-<div frag="面板2"> 
-<div frag="窗口2"> 
-<div frag="窗口内容"> 
-<!--[WP1TO3]--> 
-<table cellpadding="0" cellspacing="0" border="0" width="100%" height="28"><tr><td>(频道)</td></tr></table> 
-</div> 
-</div> 
-</div> 
-</td>
-</tr>
-</table>
-</div>
-<img id="logo"  src="images/logo.jpg" width="1000" height="206"  />
-<div id="nav" class="width">
 
-<div frag="面板3"> 
-<div frag="窗口3"> 
-<div frag="窗口内容"> 
-<!--[WP1TO3]--> 
-<table cellpadding="0" cellspacing="0" border="0" align="center">
-<tr>
-<td>(频道)</td>
-</tr>
-</table> 
-</div> 
-</div> 
-</div> 
-
+<!--头图-->
+<div class="youth-banner-background">
+    <img style="width:1000px;height:150px;" src="img/temp.png"/>
 </div>
-<div id="content" class="width">
-<h2 id="article_title">
-<span frag="面板5"> 
-<span frag="窗口5" portletmode="simpleArticleTitle"> 
-<span frag="窗口内容">文章标题</span> 
-</span> 
-</span> 
-</h2>
-<p id="article_time">发布时间:
-<span frag="面板6"> 
-<span frag="窗口6" portletmode="simpleArticlePublishDate"> 
-<span frag="窗口内容">发布时间</span> 
-</span> 
-</span> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;访问次数:
-<span frag="面板7"> 
-<span frag="窗口7" portletmode="simpleArticleAttri"> 
-<span frag="窗口内容">{动态浏览次数}</span> 
-</span> 
-</span> 
-</p>
-<div id="article_content">
-<div frag="面板4"> 
-<div frag="窗口4" portletmode="simpleArticleContent" style="text-align: left;"> 
-<div frag="窗口内容">文章内容</div> 
-</div> 
-</div> 
-</div>
-<div style="clear:both; height:60px;">&nbsp;</div>
-<div align="center" style="position:absolute; left:480px; bottom:40px"><a href="javascript:window.close()"><img src="images/b_closewindow.gif" width="74" height="19" border="0"></a></div>
 
-<div id="footer">版权所有&copy;共青团东南大学委员会&nbsp;&nbsp;&nbsp;&nbsp;技术支持：南京苏迪科技|东南大学计算机学院网络部 </div>
+<!--导航栏-->
+<div class="youth-nav-background" id="youth-navbar">
+    <div class="youth-nav" frag="面板1">
+        <div class="youth-nav" frag="窗口1">
+
+        </div>
+    </div>
+</div>
+
+
+<div class="youth-window-group">
+    <div class="youth-window-sub-group">
+        <div class="youth-article" style="flex-basis:0;flex-grow:1">
+            <div frag="面板2">
+            <div class="article-title" frag="窗口2" portletmode="simpleArticleAttri">
+                <div frag="窗口内容">
+                    {标题}
+                </div>
+            </div>
+          </div>
+            <div frag="面板3">
+            <div class="article-detail">
+                <div  frag="窗口4" portletmode="simpleArticleAttri">
+                    <div frag="窗口内容">
+                        发布时间：{发布时间}
+                    </div>
+                </div>
+                <div  frag="窗口5" portletmode="simpleArticleAttri">
+                    <div frag="窗口内容">
+                        发布者：{发布者}
+                    </div>
+                </div>
+                <div frag="窗口6" portletmode="simpleArticleAttri">
+                    <div frag="窗口内容">
+                        文章来源：{文章来源}
+                    </div>
+                </div>
+                <div frag="窗口7" style="display:flex" portletmode="simpleArticleAttri">
+                    <div frag="窗口内容">
+                        浏览次数：{浏览次数}
+                    </div>
+                </div>
+            </div>
+          </div>
+            <div frag="面板4">
+              <div class="article-content" frag="窗口3" portletmode="simpleArticleAttri">
+                <div frag="窗口内容">
+                    {内容}
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--友情链接-->
+<div class="youth-link-panel">
+    <div class="youth-link-index">
+        <a class="youth-link" href="http://www.seu.edu.cn">东南大学</a>
+        <a class="youth-link" href="http://my.seu.edu.cn">东南大学校园信息门户</a>
+        <a class="youth-link" href="http://jwc.seu.edu.cn">教务处</a>
+        <a class="youth-link" href="">东南大学网络与信息中心</a>
+        <a class="youth-link" href="">中国共青团网</a>
+    </div>
+</div>
+<!--    版权标识-->
+
+<div class="youth-copyright-panel">
+    <p class="youth-copyright-text">中国共青团东南大学委员会©版权所有</p>
+    <p class="youth-copyright-text">备案序号：苏ICP证201008206600号</p>
 </div>
 </body>
+<link type="text/css" href="css/main.css" rel="stylesheet"/>
 </html>
-
-
-　　 　　
-
-

@@ -5,7 +5,6 @@
     <title>东南大学校团委</title>
     <link type="text/css" href="css/main.css" rel="stylesheet"/>
 </head>
-
 <body>
 
 <!--头图-->
@@ -22,26 +21,34 @@
     </div>
 </div>
 
+<div class="youth-slide-background" id="youth-slides">
+    <div class="youth-slide" frag="面板2">
+        <div class="youth-slide" frag="窗口2">
+        </div>
+    </div>
+</div>
+
 <div class="youth-slide-panel">
     <!--轮播图-->
-    <div class="youth-slide-background" id="youth-slides">
-        <img class="youth-slide" src="img/Frame3.png"/>
-    </div>
-    <div class="youth-slide-sub">
+    <div class="youth-slide-sub" >
         <div class="youth-slide-list" style="flex-basis:0;flex-grow:1">
             <div frag="面板3">
                 <div frag="窗口3">
-                    <div class="youth-window-title">
-                        <h3 class="youth-window-title-text" style="flex-grow:1">最新动态</h3>
+                    <div class="youth-big-window-title" style="">
+                        <h3 class="youth-window-title-text" style="flex-grow:1;">团学快讯</h3>
                         <div class="youth-window-more-btn" frag="按钮" type="更多"><span class="more_text" frag="按钮内容">更多&gt;&gt;</span>
                         </div>
                     </div>
-                    <div class="youth-window-content">
+                    <div class="mix-content-list" style="display:flex;flex-direction:row;justify-content:center;align-items:flex-start;">
                         <div frag="窗口内容">
-                            <div style="display:flex;align-items:center;margin-top:10px">
-                                <div class="article-title" style="flex-grow:1;">{标题}</div>
-                                <div class="article-date">{发布时间}</div>
+                          <div style="display:flex;flex-direction:row;justify-content:center;align-items:flex-start;">
+                            <div class="youth-mix-content">
+                                <div class="article-pic">{缩略图}</div>
+                                <div class="article-mix-title">{标题}</div>
+                                <div class="article-date" style="padding-left:0px">{发布时间}</div>
+                                <div class="article-abstract">{内容}</div>
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -50,7 +57,7 @@
         <div class="youth-slide-list" style="flex-basis:0;flex-grow:1">
             <div frag="面板4">
                 <div frag="窗口4">
-                    <div class="youth-window-title">
+                    <div class="youth-big-window-title">
                         <h3 class="youth-window-title-text" style="flex-grow:1">通知公告</h3>
                         <div class="youth-window-more-btn" frag="按钮" type="更多"><span class="more_text" frag="按钮内容">更多&gt;&gt;</span>
                         </div>
@@ -75,7 +82,7 @@
             <div frag="面板5">
                 <div frag="窗口5">
                     <div class="youth-window-title">
-                        <h3 class="youth-window-title-text" style="flex-grow:1">团学快讯</h3>
+                        <h3 class="youth-window-title-text" style="flex-grow:1">磐石工程</h3>
                         <div class="youth-window-more-btn" frag="按钮" type="更多"><span class="more_text" frag="按钮内容">更多&gt;&gt;</span>
                         </div>
                     </div>
@@ -116,25 +123,6 @@
                 <div frag="窗口7">
                     <div class="youth-window-title">
                         <h3 class="youth-window-title-text" style="flex-grow:1">思想引领</h3>
-                        <div class="youth-window-more-btn" frag="按钮" type="更多"><span class="more_text" frag="按钮内容">更多&gt;&gt;</span>
-                        </div>
-                    </div>
-                    <div class="youth-window-content">
-                        <div frag="窗口内容">
-                            <div style="display:flex;align-items:center;margin-top:10px">
-                                <div class="article-title" style="flex-grow:1;">{标题}</div>
-                                <div class="article-date">{发布时间}</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="youth-slide-list" style="flex-basis:0;flex-grow:1">
-            <div frag="面板8">
-                <div frag="窗口8">
-                    <div class="youth-window-title">
-                        <h3 class="youth-window-title-text" style="flex-grow:1">磐石工程</h3>
                         <div class="youth-window-more-btn" frag="按钮" type="更多"><span class="more_text" frag="按钮内容">更多&gt;&gt;</span>
                         </div>
                     </div>
@@ -246,5 +234,18 @@
     <p class="youth-copyright-text">备案序号：苏ICP证201008206600号</p>
 </div>
 </body>
+<script>
+  $(document).ready(function(){
+    $('.timer').click();
+    $('.timer').css('display', 'none');
+    setInterval(function(){
+      $('span.right').click();
+    }, 6000);
+    $('span.right').css('background','url(/_upload/tpl/05/e8/1512/template1512/img/slide_next.png) no-repeat');
+    $('span.left').css('background','url(/_upload/tpl/05/e8/1512/template1512/img/slide_previous.png) no-repeat');
+$('span.left').css('left',40);
+
+  })
+</script>
 <link type="text/css" href="css/main.css" rel="stylesheet"/>
 </html>

@@ -12,10 +12,10 @@ body{
 /*头图相关*/
 .youth-banner-background{
     width:100%;
-    background-color: #FF2F00;
+    background-color: #E72520;
     display: flex;
     justify-content: center;
-    
+
 }
 
 /*导航栏相关*/
@@ -28,7 +28,7 @@ body{
 }
 
 .youth-nav{
-    width: 1000px;
+    width: 1200px;
     display:flex;
     justify-content:center;
 
@@ -88,7 +88,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #fbfbfb;
+    background-color: #f5f5f5;
+    align-items: center;
 }
 /* 轮播图相关*/
 .youth-slide-background{
@@ -100,7 +101,7 @@ body{
 }
 
 .youth-slide {
-    width: 1000px;
+    width: 1200px;
     height: 400px;
 }
 /*！ 轮播图相关*/
@@ -115,21 +116,50 @@ body{
     justify-content: center;
     padding: 40px;
     padding-bottom: 10px;
+    padding-top: 0px;
+    width:100%;
+    max-width: 1280px;
 }
 
-.youth-window-title-text span{
+.youth-window-title-text{
     font-size: 18px;
+    padding-left: 50px;
+    color: #333333;
+    padding-top: 0px;
+    margin-top: 15px;
 }
 
 .youth-window-title{
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-    border-bottom-color: #E72520;
+    border-color: #E72520;
     display: flex;
     align-items: baseline;
     height: 50px;
     padding-bottom: 0px;
     margin-bottom: 5px;
+    background: url(/_upload/tpl/05/e8/1512/template1512/img/small-title-background.png);
+    background-repeat:no-repeat;
+    background-position: center left;
+    background-size:200px 40px;
+}
+
+.youth-big-window-title{
+    display: flex;
+    align-items: baseline;
+    height: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    background: url(/_upload/tpl/05/e8/1512/template1512/img/big-title-background.png);
+    background-repeat:no-repeat;
+    background-position: center left;
+    background-size:200px 40px;
+}
+
+.youth-big-window-title .youth-window-title-text{
+    font-size: 18px;
+    padding-left: 70px;
+    color: #f4f4f4;
+    padding-top: 0px;
+    margin-top: 12px;
 }
 
 .youth-window-more-btn span{
@@ -160,7 +190,24 @@ body{
     color:#333333;
     font-size: 14px;
     flex-grow: 1;
-    
+}
+
+.article-pic img{
+  width: 200px;
+}
+
+.article-mix-title a{
+    text-decoration: none;
+    color:#333333;
+    font-size: 14px;
+    flex-grow: 1;
+    font-weight: bolder;
+}
+
+.article-abstract a{
+  text-decoration: none;
+  color:#4f4f4f;
+  font-size: 14px;
 }
 
 .article-date{
@@ -175,13 +222,16 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 1280px;
+    align-items: center;
 }
 
 .youth-window-sub-group{
      display: flex;
-     justify-content: center; 
-        padding: 0px 40px 0px 40px;
-
+     justify-content: center;
+     padding: 0px 40px 0px 40px;
+     max-width: 1280px;
+     width: 100%;
 }
 
 .youth-link-index{
@@ -219,4 +269,51 @@ body{
 .youth-copyright-text{
     color: #F4F4F4;
     margin: 7px;
+}
+
+.youth-mix-content
+{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  padding:10px;
+}
+
+.youth-mix-content .article-title{
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.youth-article {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 1000px;
+}
+
+.youth-article .article-title{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 40px 0 20px 0;
+
+}
+
+.youth-article span {
+  font-size: 14px!important;
+}
+
+.youth-article .article-detail{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom:10px;
+}
+
+.youth-article .article-detail div{
+  font-size: 14px;
+  color:#888888;
+}
+
+.mix-content-list tr{
+  display: flex;
 }
